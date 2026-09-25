@@ -104,7 +104,7 @@ button, input, textarea {
 .brand {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 13px;
   font-size: 14px;
   font-weight: 750;
   letter-spacing: .11em;
@@ -112,14 +112,15 @@ button, input, textarea {
 
 
 .brand img {
-  width: 48px;
-  height: 48px;
+  width: 56px;
+  height: 60px;
   object-fit: contain;
   object-position: center;
-  padding: 5px;
-  border-radius: 14px;
-  border: 1px solid rgba(241,189,72,.32);
-  background: rgba(8,36,63,.72);
+  padding: 0;
+  border-radius: 15px;
+  border: 1px solid rgba(241,189,72,.38);
+  background: rgba(8,36,63,.78);
+  box-shadow: 0 8px 24px rgba(2,8,20,.28), 0 0 0 1px rgba(255,255,255,.035) inset;
 }
 
 
@@ -1752,8 +1753,8 @@ footer {
   }
 
   .brand img {
-    width: 42px;
-    height: 42px;
+    width: 46px;
+    height: 50px;
   }
 
   .menu-toggle {
