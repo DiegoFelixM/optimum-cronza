@@ -2168,6 +2168,123 @@ footer {
   }
 }
 
+/* Dark-background branch variant */
+.services {
+  color: var(--white);
+  background:
+    radial-gradient(circle at 88% 10%, rgba(241, 189, 72, .12), transparent 25%),
+    radial-gradient(circle at 8% 86%, rgba(35, 90, 125, .32), transparent 34%),
+    linear-gradient(145deg, #071d35 0%, #0c2d4f 58%, #08243f 100%);
+}
+
+.services .section-title .eyebrow {
+  color: var(--gold);
+}
+
+.services .section-title > p:last-child {
+  color: rgba(245, 247, 250, .72);
+}
+
+.capabilities {
+  border-color: rgba(245, 247, 250, .14);
+  background: rgba(5, 25, 46, .68);
+  box-shadow: 0 22px 50px rgba(2, 8, 20, .2);
+}
+
+.capabilities div {
+  border-color: rgba(245, 247, 250, .14);
+}
+
+.capabilities div:hover {
+  background: rgba(245, 247, 250, .07);
+}
+
+.capabilities span {
+  color: rgba(245, 247, 250, .82);
+}
+
+.quote {
+  color: var(--white);
+  background:
+    radial-gradient(circle at 12% 15%, rgba(35, 90, 125, .38), transparent 30%),
+    radial-gradient(circle at 88% 86%, rgba(241, 189, 72, .09), transparent 24%),
+    linear-gradient(145deg, #08243f 0%, #0c2d4f 55%, #071d35 100%);
+}
+
+.quote-layout > div > p:last-child {
+  color: rgba(245, 247, 250, .72);
+}
+
+.quote form {
+  border-color: rgba(245, 247, 250, .14);
+  background: rgba(5, 25, 46, .72);
+  box-shadow: 0 24px 60px rgba(2, 8, 20, .28);
+}
+
+.quote input,
+.quote textarea {
+  color: var(--white);
+  border-color: rgba(245, 247, 250, .3);
+}
+
+.quote input::placeholder,
+.quote textarea::placeholder {
+  color: rgba(245, 247, 250, .48);
+}
+
+.quote button {
+  color: var(--ink);
+  background: var(--gold);
+}
+
+.quote button:hover {
+  background: #ffd36e;
+}
+
+.quote button span {
+  color: var(--ink);
+}
+
+.contact-details {
+  color: var(--white);
+  background: rgba(5, 25, 46, .94);
+  border-color: rgba(245, 247, 250, .16);
+}
+
+.contact-details .eyebrow {
+  color: var(--gold);
+}
+
+.contact-details hr {
+  border-color: rgba(245, 247, 250, .16);
+}
+
+.contact-method {
+  background: rgba(245, 247, 250, .055);
+  border-color: rgba(245, 247, 250, .12);
+}
+
+.contact-method:hover {
+  border-color: rgba(241, 189, 72, .55);
+  box-shadow: 0 12px 28px rgba(2, 8, 20, .24);
+}
+
+.contact-method small {
+  color: rgba(245, 247, 250, .58);
+}
+
+.contact-method strong {
+  color: var(--white);
+}
+
+.contact-method .contact-icon {
+  background: var(--blue-soft);
+}
+
+.contact-map iframe {
+  filter: invert(.9) hue-rotate(180deg) saturate(.58) brightness(.78) contrast(1.08);
+}
+
 /* Left-aligned hero and continuous attributes ticker */
 .hero::before {
   opacity: .76;
