@@ -2201,6 +2201,8 @@ footer {
 }
 
 .hero-tagline {
+  width: min(620px, 100%);
+  max-width: 620px;
   margin-right: 0;
   margin-left: 0;
 }
@@ -2296,6 +2298,8 @@ footer {
   }
 
   .hero-tagline {
+    width: min(350px, 100%);
+    max-width: 350px;
     margin-right: auto;
     margin-left: auto;
   }
