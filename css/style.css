@@ -2216,16 +2216,20 @@ footer {
 
 .ticker .ticker-track {
   width: max-content;
+  min-width: max-content;
   display: flex;
+  flex-wrap: nowrap;
   animation: tickerContinuous 32s linear infinite;
   will-change: transform;
 }
 
 .ticker-group {
   flex: 0 0 auto;
+  width: max-content;
+  min-width: 100vw;
   display: flex;
   align-items: center;
-  min-width: max-content;
+  justify-content: space-around;
 }
 
 .ticker-group i {
@@ -2238,7 +2242,7 @@ footer {
   }
 
   to {
-    transform: translateX(-50%);
+    transform: translate3d(-50%, 0, 0);
   }
 }
 
