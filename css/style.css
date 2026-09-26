@@ -2965,3 +2965,127 @@ footer {
     flex-basis: 36px;
   }
 }
+
+/* Mission and vision: richer editorial cards on desktop */
+@media(min-width: 901px) {
+  .statement-grid article {
+    min-height: 510px;
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid rgba(241, 189, 72, .32);
+    background:
+      radial-gradient(circle at 18% 84%, rgba(200, 137, 29, .13), transparent 34%),
+      linear-gradient(145deg, #08243f, #061c33 72%);
+  }
+
+  .statement-grid article:nth-child(2) {
+    background:
+      radial-gradient(circle at 84% 16%, rgba(35, 90, 125, .34), transparent 38%),
+      linear-gradient(215deg, #0c2d4f, #061c33 74%);
+  }
+
+  .statement-grid article::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 220px;
+    aspect-ratio: 1173 / 1341;
+    right: -54px;
+    bottom: -52px;
+    background: url("../assets/header-helmet-outline.png") center / contain no-repeat;
+    opacity: .055;
+    transform: rotate(-8deg);
+  }
+
+  .statement-grid article:nth-child(2)::before {
+    right: auto;
+    left: -58px;
+    transform: rotate(8deg);
+  }
+
+  .statement-grid article::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 104px;
+    height: 3px;
+    background: linear-gradient(90deg, var(--gold), transparent);
+  }
+
+  .statement-grid article > span {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-weight: 800;
+  }
+
+  .statement-grid article > span::after {
+    content: "";
+    width: 58px;
+    height: 1px;
+    background: linear-gradient(90deg, rgba(241, 189, 72, .72), transparent);
+  }
+
+  .statement-grid h3 {
+    position: relative;
+    z-index: 1;
+    margin: auto 0 22px;
+    padding-top: 94px;
+    font-size: 40px;
+  }
+
+  .statement-grid h3::before {
+    position: absolute;
+    top: 18px;
+    left: 0;
+    color: var(--gold);
+    font: 400 58px/1 var(--display);
+    opacity: .92;
+    text-shadow: 0 10px 28px rgba(200, 137, 29, .24);
+  }
+
+  .statement-grid article:first-child h3::before {
+    content: "◎";
+  }
+
+  .statement-grid article:nth-child(2) h3::before {
+    content: "◇";
+  }
+
+  .statement-grid article p {
+    position: relative;
+    z-index: 1;
+    max-width: 34ch;
+    font-size: 15px;
+  }
+}
+
+/* Keep the mobile capability rows optically centered */
+@media(max-width: 620px) {
+  .capabilities div {
+    min-height: 108px;
+    display: grid;
+    grid-template-columns: 64px minmax(0, 174px);
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    padding: 22px 18px;
+  }
+
+  .capabilities strong {
+    width: 64px;
+    text-align: center;
+    line-height: 1;
+  }
+
+  .capabilities span {
+    width: 100%;
+    text-align: left;
+  }
+}
