@@ -1095,6 +1095,12 @@ footer {
   box-shadow: 0 18px 42px rgba(0,0,0,.46);
 }
 
+.whatsapp svg {
+  width: 28px;
+  height: 28px;
+  fill: currentColor;
+}
+
 ::selection {
   background: var(--gold);
   color: var(--ink);
