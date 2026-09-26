@@ -2763,6 +2763,7 @@ footer {
   gap: 0;
   color: var(--white);
   letter-spacing: normal;
+  margin-left: clamp(8px, 1vw, 18px);
 }
 
 .brand .brand-mark,
