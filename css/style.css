@@ -110,11 +110,6 @@ button, input, textarea {
   letter-spacing: .11em;
 }
 
-.brand span {
-  font-family: var(--display);
-  font-weight: 720;
-}
-
 
 .brand img {
   width: 56px;
