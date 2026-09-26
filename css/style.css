@@ -2822,3 +2822,45 @@ footer {
     margin-top: 12px;
   }
 }
+
+/* Mobile-only hero framing: keep both guards visible */
+@media(max-width: 620px) {
+  .hero::before {
+    background-position: 81% center;
+    opacity: .72;
+    filter: saturate(.96) contrast(1.06) brightness(.98);
+  }
+
+  .hero::after {
+    background:
+      linear-gradient(180deg, rgba(5, 25, 46, .8) 0%, rgba(5, 25, 46, .62) 42%, rgba(5, 25, 46, .2) 67%, rgba(5, 25, 46, .04) 100%),
+      linear-gradient(90deg, rgba(5, 25, 46, .18), transparent 76%);
+  }
+
+  .hero-actions {
+    flex-direction: row;
+    gap: 8px;
+    margin-top: 18px;
+  }
+
+  .hero-actions a {
+    width: auto;
+    min-width: 0;
+    min-height: 42px;
+    flex: 1 1 0;
+    gap: 8px;
+    padding: 0 13px;
+    font-size: clamp(.66rem, 2.9vw, .76rem);
+  }
+
+  .hero-permit {
+    margin-top: 14px;
+    padding: 8px 14px 8px 8px;
+  }
+
+  .hero-permit-icon {
+    width: 36px;
+    height: 36px;
+    flex-basis: 36px;
+  }
+}
