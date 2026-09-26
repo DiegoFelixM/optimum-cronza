@@ -978,6 +978,11 @@ section[id] {
   border-color: var(--gold2);
 }
 
+.quote input::placeholder, .quote textarea::placeholder {
+  color: currentColor;
+  opacity: .48;
+}
+
 
 .quote .full {
   grid-column: 1/-1;
