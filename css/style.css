@@ -2370,13 +2370,27 @@ footer {
 
 .hero-brand-emblem {
   display: block;
-  width: 66px;
-  height: 74px;
+  width: 72px;
+  aspect-ratio: 370 / 430;
   flex: 0 0 auto;
-  object-fit: cover;
-  filter: drop-shadow(0 8px 18px rgba(2, 8, 20, .38));
-  -webkit-mask-image: radial-gradient(ellipse 72% 76% at 50% 48%, #000 58%, transparent 94%);
-  mask-image: radial-gradient(ellipse 72% 76% at 50% 48%, #000 58%, transparent 94%);
+  background: var(--gold);
+  -webkit-mask-image:
+    linear-gradient(#000 0 0),
+    url("../assets/footer-emblem-outline.png");
+  -webkit-mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: contain, contain;
+  -webkit-mask-composite: source-out;
+  mask-image:
+    linear-gradient(#000 0 0),
+    url("../assets/footer-emblem-outline.png");
+  mask-position: center;
+  mask-repeat: no-repeat;
+  mask-size: contain, contain;
+  mask-mode: alpha, luminance;
+  mask-composite: subtract;
+  clip-path: inset(1px 2px);
+  filter: drop-shadow(0 8px 16px rgba(2, 8, 20, .38));
 }
 
 .hero-brand-line .hero-kicker {
@@ -2489,8 +2503,7 @@ footer {
   }
 
   .hero-brand-emblem {
-    width: 46px;
-    height: 52px;
+    width: 50px;
   }
 
   .hero-word {
