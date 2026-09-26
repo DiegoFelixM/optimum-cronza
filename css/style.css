@@ -2698,12 +2698,13 @@ footer {
   }
 }
 
-/* Metallic serif wordmarks — experimental branch */
+/* Edensor metallic wordmarks — experimental branch */
 .hero-word,
 .footer-word {
-  font-family: "Times New Roman", "Palatino Linotype", Georgia, serif;
-  font-weight: 600;
-  letter-spacing: .025em;
+  font-family: "Edensor", "Palatino Linotype", Georgia, serif;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: .015em;
 }
 
 .hero-word > span:not(.hero-i-wrap),
@@ -2743,8 +2744,24 @@ footer {
 }
 
 .footer-word {
-  letter-spacing: .045em;
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+  font-size: clamp(4.25rem, 8.25vw, 8.75rem);
+  line-height: .9;
+  letter-spacing: .018em;
+  white-space: nowrap;
   text-shadow: none;
+}
+
+@media(min-width: 621px) {
+  .footer-identity {
+    grid-template-columns:
+      clamp(108px, 9vw, 140px)
+      minmax(0, 1fr)
+      clamp(108px, 9vw, 140px);
+    gap: clamp(24px, 2.75vw, 46px);
+  }
 }
 
 @media(max-width: 620px) {
@@ -2759,6 +2776,8 @@ footer {
   }
 
   .footer-word {
+    width: auto;
     letter-spacing: .025em;
+    white-space: normal;
   }
 }
