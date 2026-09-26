@@ -1,11 +1,20 @@
 document.addEventListener('DOMContentLoaded', () => {
   const header = document.querySelector('.site-header');
+  const brand = document.querySelector('.brand');
   const toggle = document.querySelector('.menu-toggle');
   const nav = document.querySelector('.nav');
 
   const syncHeader = () => header.classList.toggle('scrolled', window.scrollY > 24);
   syncHeader();
   window.addEventListener('scroll', syncHeader, { passive: true });
+
+  brand.addEventListener('click', event => {
+    event.preventDefault();
+    window.scrollTo({
+      top: 0,
+      behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth'
+    });
+  });
 
   toggle.addEventListener('click', () => {
     const open = nav.classList.toggle('open');
