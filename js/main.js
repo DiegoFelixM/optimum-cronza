@@ -34,8 +34,21 @@ document.addEventListener('DOMContentLoaded', () => {
   document.querySelector('#quote-form').addEventListener('submit', event => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
-    const message = `Hola, soy ${data.get('nombre')}${data.get('empresa') ? ` de ${data.get('empresa')}` : ''}.%0A%0ATeléfono: ${data.get('telefono')}%0ACorreo: ${data.get('correo')}%0A%0A${data.get('mensaje')}`;
-    window.open(`https://wa.me/526679955569?text=${encodeURI(message)}`, '_blank', 'noopener');
+    const getValue = field => String(data.get(field) || '').trim();
+    const company = getValue('empresa');
+    const message = [
+      'Hola, me gustaría solicitar una cotización de seguridad privada.',
+      '',
+      `Nombre: ${getValue('nombre')}`,
+      ...(company ? [`Empresa: ${company}`] : []),
+      `Teléfono: ${getValue('telefono')}`,
+      `Correo: ${getValue('correo')}`,
+      '',
+      'Mensaje:',
+      getValue('mensaje')
+    ].join('\n');
+    const whatsappUrl = `https://wa.me/526679955569?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
   });
   document.querySelector('#year').textContent = new Date().getFullYear();
 });
