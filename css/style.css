@@ -2051,6 +2051,11 @@ footer {
   gap: 10px;
 }
 
+.contact-details .contact-address {
+  width: 100%;
+  margin-top: 14px;
+}
+
 .contact-method {
   min-width: 0;
   display: flex;
