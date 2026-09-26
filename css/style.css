@@ -2244,6 +2244,28 @@ footer {
   text-align: left;
 }
 
+.hero-brand-line {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 4px;
+}
+
+.hero-brand-emblem {
+  display: block;
+  width: 66px;
+  height: 74px;
+  flex: 0 0 auto;
+  object-fit: cover;
+  filter: drop-shadow(0 8px 18px rgba(2, 8, 20, .38));
+  -webkit-mask-image: radial-gradient(ellipse 72% 76% at 50% 48%, #000 58%, transparent 94%);
+  mask-image: radial-gradient(ellipse 72% 76% at 50% 48%, #000 58%, transparent 94%);
+}
+
+.hero-brand-line .hero-kicker {
+  margin: 0;
+}
+
 .hero-word {
   width: auto;
   max-width: 100%;
@@ -2342,6 +2364,16 @@ footer {
     padding-right: 0;
     align-items: center;
     text-align: center;
+  }
+
+  .hero-brand-line {
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .hero-brand-emblem {
+    width: 46px;
+    height: 52px;
   }
 
   .hero-word {
