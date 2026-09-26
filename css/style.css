@@ -2774,6 +2774,22 @@ footer {
   letter-spacing: .27em;
 }
 
+.hero-company-name {
+  width: 100%;
+  max-width: 620px;
+  margin: 12px 0 0;
+  color: var(--gold);
+  font-size: clamp(.72rem, .85vw, .9rem);
+  font-weight: 800;
+  letter-spacing: .24em;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.hero-company-name + .hero-tagline {
+  margin-top: 14px;
+}
+
 @media(max-width: 620px) {
   .brand-mark {
     width: 34px;
@@ -2792,5 +2808,17 @@ footer {
   .brand-copy small {
     font-size: 5.5px;
     letter-spacing: .22em;
+  }
+
+  .hero-company-name {
+    max-width: 350px;
+    margin: 10px auto 0;
+    font-size: .66rem;
+    letter-spacing: .18em;
+    text-align: center;
+  }
+
+  .hero-company-name + .hero-tagline {
+    margin-top: 12px;
   }
 }
