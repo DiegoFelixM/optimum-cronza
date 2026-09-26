@@ -3036,8 +3036,8 @@ footer {
   .statement-grid h3 {
     position: relative;
     z-index: 1;
-    margin: auto 0 22px;
-    padding-top: 94px;
+    margin: 58px 0 22px;
+    padding-top: 82px;
     font-size: 40px;
   }
 
@@ -3083,6 +3083,7 @@ footer {
     width: 64px;
     text-align: center;
     line-height: 1;
+    transform: translateX(-16px);
   }
 
   .capabilities span {
