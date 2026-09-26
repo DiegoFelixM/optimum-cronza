@@ -2758,7 +2758,6 @@ footer {
       linear-gradient(90deg, rgba(5, 25, 46, .26), transparent 82%);
   }
 }
-
 /* Edensor metallic wordmarks — experimental branch */
 .hero-word,
 .footer-word {
@@ -2840,5 +2839,90 @@ footer {
     width: auto;
     letter-spacing: .025em;
     white-space: normal;
+  }
+}
+
+/* White institutional lockup in the floating header */
+.brand {
+  gap: 0;
+  color: var(--white);
+  letter-spacing: normal;
+}
+
+.brand .brand-mark,
+.brand .brand-divider,
+.brand .brand-copy {
+  display: block;
+}
+
+.brand-mark {
+  width: 46px;
+  height: 54px;
+  flex: 0 0 auto;
+  background: currentColor;
+  -webkit-mask-image:
+    linear-gradient(#000 0 0),
+    url("../assets/footer-emblem-outline.png");
+  -webkit-mask-position: center, center;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%, 114px 133px;
+  -webkit-mask-composite: source-out;
+  mask-image:
+    linear-gradient(#000 0 0),
+    url("../assets/footer-emblem-outline.png");
+  mask-position: center, center;
+  mask-repeat: no-repeat;
+  mask-size: 100% 100%, 114px 133px;
+  mask-mode: alpha, luminance;
+  mask-composite: subtract;
+}
+
+.brand-divider {
+  width: 1px;
+  height: 40px;
+  margin: 0 13px;
+  flex: 0 0 auto;
+  background: currentColor;
+  opacity: .78;
+}
+
+.brand .brand-copy {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  white-space: nowrap;
+}
+
+.brand-copy strong {
+  font: 700 24px/.84 "Times New Roman", "Palatino Linotype", Georgia, serif;
+  letter-spacing: .012em;
+}
+
+.brand-copy small {
+  font: 750 7px/1 var(--sans);
+  letter-spacing: .27em;
+}
+
+@media(max-width: 620px) {
+  .brand-mark {
+    width: 34px;
+    height: 40px;
+    -webkit-mask-size: 100% 100%, 84px 98px;
+    mask-size: 100% 100%, 84px 98px;
+  }
+
+  .brand-divider {
+    height: 31px;
+    margin: 0 9px;
+  }
+
+  .brand-copy strong {
+    font-size: 18px;
+  }
+
+  .brand-copy small {
+    font-size: 5.5px;
+    letter-spacing: .22em;
   }
 }
