@@ -2646,6 +2646,11 @@ footer {
   letter-spacing: .015em;
 }
 
+.brand span {
+  font-family: "Edensor", "Palatino Linotype", Georgia, serif;
+  font-weight: 700;
+}
+
 .hero-word > span:not(.hero-i-wrap),
 .footer-word {
   color: transparent;
