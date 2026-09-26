@@ -2698,13 +2698,13 @@ footer {
   }
 }
 
-/* Edensor metallic wordmarks — experimental branch */
+/* Classic metallic serif wordmarks — experimental branch */
 .hero-word,
 .footer-word {
-  font-family: "Edensor", "Palatino Linotype", Georgia, serif;
-  font-weight: 700;
+  font-family: "Times New Roman", "Palatino Linotype", Georgia, serif;
+  font-weight: 600;
   font-style: normal;
-  letter-spacing: .015em;
+  letter-spacing: .025em;
 }
 
 .hero-word > span:not(.hero-i-wrap),
