@@ -2580,3 +2580,68 @@ footer {
       linear-gradient(90deg, rgba(5, 25, 46, .26), transparent 82%);
   }
 }
+
+/* Metallic serif wordmarks — experimental branch */
+.hero-word,
+.footer-word {
+  font-family: "Times New Roman", "Palatino Linotype", Georgia, serif;
+  font-weight: 600;
+  letter-spacing: .025em;
+}
+
+.hero-word > span:not(.hero-i-wrap),
+.footer-word {
+  color: transparent;
+  background:
+    linear-gradient(180deg,
+      #ffffff 0%,
+      #c6cdd3 18%,
+      #f7f9fb 35%,
+      #77818a 52%,
+      #e9edf0 68%,
+      #929ba3 84%,
+      #f7f8f9 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: .45px rgba(255,255,255,.42);
+  filter: drop-shadow(0 2px 0 rgba(255,255,255,.2)) drop-shadow(0 9px 16px rgba(2,8,20,.34));
+}
+
+.hero-i {
+  color: transparent;
+  background:
+    linear-gradient(180deg,
+      #fff2aa 0%,
+      #d89a24 22%,
+      #ffd96d 40%,
+      #9b6411 57%,
+      #f3bd43 76%,
+      #fff0a0 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: .5px rgba(255,225,133,.56);
+  filter: drop-shadow(0 2px 0 rgba(255,240,169,.24)) drop-shadow(0 10px 18px rgba(2,8,20,.36));
+}
+
+.footer-word {
+  letter-spacing: .045em;
+  text-shadow: none;
+}
+
+@media(max-width: 620px) {
+  .hero-word {
+    gap: clamp(.02rem, .18vw, .07rem);
+    font-size: clamp(2.35rem, 10.8vw, 4rem);
+    letter-spacing: 0;
+  }
+
+  .hero-tagline br {
+    display: block;
+  }
+
+  .footer-word {
+    letter-spacing: .025em;
+  }
+}
