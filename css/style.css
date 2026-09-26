@@ -2646,11 +2646,6 @@ footer {
   letter-spacing: .025em;
 }
 
-.brand span {
-  font-family: "Times New Roman", "Palatino Linotype", Georgia, serif;
-  font-weight: 600;
-}
-
 .hero-word > span:not(.hero-i-wrap),
 .footer-word {
   color: transparent;
