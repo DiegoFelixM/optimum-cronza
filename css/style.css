@@ -2396,6 +2396,10 @@ footer {
   animation: heroEmblemIn .8s ease-out .08s both;
 }
 
+.hero-orbit {
+  display: none;
+}
+
 .title-line {
   display: block;
   max-width: 100%;
@@ -2474,6 +2478,11 @@ footer {
 }
 
 @media(min-width: 901px) {
+  .values-sticky h2 {
+    transform: scale(1.075);
+    transform-origin: left top;
+  }
+
   .values-sticky {
     top: 0;
     margin-top: -14px;
